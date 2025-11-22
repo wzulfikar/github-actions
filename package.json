@@ -28,6 +28,8 @@
     "@react-email/markdown": "^0.0.17",
     "@react-email/render": "^2.0.0",
     "@react-email/tailwind": "^2.0.1",
+    "@sentry/browser": "^10.26.0",
+    "@sentry/node": "^10.26.0",
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.84.0",
     "@t3-oss/env-nextjs": "^0.13.8",

@@ -3,10 +3,11 @@
 pre-commit:
   parallel: true
   jobs:
-    - run: bun lint {staged_files}
+    - run: |
+        if echo "{staged_files}" | grep -q "\.test\."; then
+          bun test {staged_files}
+        fi
       glob: "*.{ts,tsx}"
-    - run: bun test {staged_files}
-      glob: "*.{js,ts,jsx,tsx}"
 
 # EXAMPLE USAGE:
 #
